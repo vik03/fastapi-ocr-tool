@@ -21,9 +21,6 @@ async def read_images_from_dir(dir_path, lang='eng', write_to_file=False):
     return converted_text
 
 def _write_to_file(text, file_path):
-    """
-    Helper method to write text to a file
-    """
     print("[INFO] Writing text to file: {0}".format(file_path))
     with open(file_path, 'w') as fp:
         fp.write(text)
